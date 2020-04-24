@@ -10,7 +10,7 @@ const forecast = (lat, lon, callback) => {
             callback('please provide valid lat lon', undefined)
         }
         else {
-            callback(undefined, body.current.weather_descriptions[0] + '. it is currently ' + body.current.temperature + ' degrees, But Feeling like ' + body.current.feelslike + ' degrees out there')
+            callback(undefined, body.current.weather_descriptions[0] + '. it is currently ' + body.current.temperature + ' degrees, But Feeling like ' + body.current.feelslike + ' degrees out there , cloudcover is ' + body.current.cloudcover + '%')
         }
     })
 }
