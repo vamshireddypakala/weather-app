@@ -1,5 +1,3 @@
-console.log('js is added to the project')
-
 
 const weatherForm = document.querySelector('form')
 
